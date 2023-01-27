@@ -1,9 +1,7 @@
-import { RequestInit } from "next/dist/server/web/spec-extension/request";
-
 export const fetcher = async (
   resource: RequestInfo,
   init?: RequestInit
-  // @eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): Promise<any> => {
   const res = await fetch(resource, init);
 
